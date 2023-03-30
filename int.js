@@ -4,7 +4,7 @@ setInterval (function horas(){
     var data = document.querySelector('p#data')
     var rec = document.querySelector('#recado')
     var hora = new Date()
-    var hr = 11//hora.getHours()
+    var hr = hora.getHours()
     var minutos = new Date()
     var min = minutos.getMinutes()
     var data1 = new Date()
