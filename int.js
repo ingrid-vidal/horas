@@ -7,19 +7,12 @@ setInterval (function horas(){
     var hr = hora.getHours()
     var minutos = new Date()
     var min = minutos.getMinutes()
-    var data1 = new Date()
-    var dia = data1.getDay()
-    var data2 = new Date()
-    var mes = data2.getMonth()
-    var data3 = new Date()
-    var ano = data3.getFullYear()
+    var datas = new Date()
+    var dia = String(datas.getDate()).padStart(2, '0')
+    var mes = String(datas.getMonth() + 1).padStart(2, '0')
+    var ano = datas.getFullYear()
     //data
-    if (dia <10){
-        dia = '0'+ dia
-    }
-    if (mes <10){
-        mes = '0'+ mes
-    }
+    
     if(min < 10){
         min = '0' + min
     }
